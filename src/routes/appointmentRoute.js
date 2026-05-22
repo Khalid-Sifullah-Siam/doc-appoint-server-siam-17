@@ -9,6 +9,7 @@ import {
 
 const router = Router();
 
+
 router.get("/", getAllAppointments);
 router.get("/:id", getSingleAppointment);
 router.post("/", createAppointment);
