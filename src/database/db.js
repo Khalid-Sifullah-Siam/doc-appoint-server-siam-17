@@ -11,7 +11,7 @@ const connectDB = async () => {
     try {
         if (!client) {
             client = new MongoClient(uri)
-            await client.connect();
+            // await client.connect();
             db = client.db("doc-appoint")
             console.log(("MongoDB Connected to doc appoint"));
         }
